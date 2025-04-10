@@ -1,0 +1,144 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+
+}
+
+.todo-container {
+    width: 336px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.header {
+    background-color: #ffe031;
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.content {
+    padding: 20px;
+}
+
+.content h2 {
+    margin: 10px 0;
+    font-size: 1.4rem;
+}
+
+.sort-icon {
+    float: right;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-right: 5px;
+}
+.sort-icon:hover {
+    color: #833AE0;
+}
+
+.input-group {
+    position: relative;
+    margin: 15px 0;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px 35px 10px 10px;
+    border: 1px solid #727272;
+    border-radius: 8px;
+    font-size: 1rem;
+}
+
+.button-group {
+    display: flex;
+    margin-left: 100px;
+    gap: 10px;
+    width: 120px;
+    margin-top: 10px;
+}
+
+.plus-button {
+    background: #a33efc;
+    border: none;
+    width: 40px;
+    height: 40px;
+    color: white;
+    font-size: 1.2rem;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.3s ease;
+    position: absolute;
+    bottom: 20px;
+    left: 120px;
+}
+
+.plus-button:hover {
+    background: linear-gradient(90deg, #8e2de2, #a050e5);
+}
+
+.add-button {
+    background: #833AE0;
+    border: none;
+    padding: 12px 20px;
+    color: white;
+    font-size: 1rem;
+    border-radius: 20px;
+    cursor: pointer;
+    flex-grow: 1;
+    transition: background 0.3s ease;
+}
+
+.task-list {
+    margin-top: 20px;
+    list-style-type: none;
+    padding: 0;
+}
+
+.task-list li {
+    background-color: #f1f1f1;
+    padding: 7px;
+    margin-top: 10px;
+    display: flex;
+    align-items: flex-start;
+    font-size: 1rem;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.task-list li span {
+    flex-grow: 1;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.task-list li button {
+    background: transparent;
+    border: none;
+    color: black;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.task-list li button:hover {
+    color: #833AE0;
+}
+
+h2 {
+    text-align: center;
+}
+
