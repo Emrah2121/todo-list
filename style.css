@@ -17,11 +17,12 @@ body {
     background-color: #fff;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     position: relative;
+  
 }
 
 .header {
     background-color: #ffe031;
-    padding: 10px;
+    padding: 13px;
     text-align: center;
     font-weight: bold;
     font-size: 1.2rem;
@@ -108,7 +109,7 @@ body {
 }
 
 .task-list li {
-    background-color: #f1f1f1;
+    background-color: #e2e2e288;
     padding: 7px;
     margin-top: 10px;
     display: flex;
@@ -117,6 +118,7 @@ body {
     width: 100%;
     box-sizing: border-box;
     margin: 0;
+   
 }
 
 .task-list li span {
@@ -140,5 +142,49 @@ body {
 
 h2 {
     text-align: center;
+}
+
+.site-footer {
+    text-align: center;
+    padding: 15px 0;
+    background-color: transparent;
+    color: #ff0202;
+    font-size: 1.4rem;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    overflow: hidden;
+}
+
+
+
+/* Animasiya  */
+.typing-text {
+    display: inline-block;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 2px solid #333;
+    font-family: monospace;
+    animation: typing 3s steps(14) infinite, 
+               erase 3s steps(14) 3s infinite,
+               reverseErase 3s steps(14) 6s infinite; 
+}
+
+
+@keyframes typing {
+    from { width: 0 }
+    to { width: 14ch }
+}
+
+
+@keyframes erase {
+    from { width: 14ch }
+    to { width: 0 }
+}
+
+
+@keyframes reverseErase {
+    from { width: 0 }
+    to { width: 14ch }
 }
 
