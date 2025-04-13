@@ -14,7 +14,7 @@ taskList.style.display = 'none';
 //Tapşırıqların saxlanması üçün array
 let tasks = [];
 
-//Tapşırıqların göstərilməsi və gizləşməsi
+//Tapşırıqların göstərilməsi və gizlənməsi
 function toggleInputVisibility() {
     if (taskInput.style.display === 'none') {
         taskInput.style.display = 'block';
